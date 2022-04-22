@@ -1,0 +1,69 @@
+@use "../../scss/" as *;
+
+.sidebar {
+    background-color: $secondary-background;
+    width: $sidebar-width;
+    height: 100vh;
+    position: fixed;
+
+    .logo {
+        font-size: 30px;
+    }
+
+    &__wrap {
+        .logo {
+            width: 100%;
+            font-size: 3rem;
+            text-align: center;
+
+            a {
+                color: #27aecb;
+            }
+        }
+    }
+
+    &__nav {
+        li {
+            height: 40px;
+            margin-bottom: 1.3rem;
+            line-height: 40px;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                font-size: 18px;
+                position: relative;
+                transition: all 0.5s ease-in-out;
+
+                i {
+                    font-size: 15px;
+                    margin: 0 1.2rem;
+                }
+
+                &.active {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+li.indicator {
+    background: $dark;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+
+    &.hidden {
+        display: none;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        border-left: 4px solid $main-color;
+        height: 100%;
+    }
+}
