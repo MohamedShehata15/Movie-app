@@ -5,7 +5,7 @@
 React Movie app is an application that uses the [The Movie Database API](https://developers.themoviedb.org/3/getting-started).
 It's a simple app to view Trending, On TV, Top Rated, and Coming Soon Movies. Display each movie with some description about it. And you can search for a move by its name.
 
-[Demo]()
+[Demo](https://movieapp2.herokuapp.com/)
 
 ![Screenshot1](Images/screenshot1.png)
 ![Screenshot2](Images/screenshot2.png)
@@ -22,7 +22,7 @@ It's a simple app to view Trending, On TV, Top Rated, and Coming Soon Movies. Di
 ## Installation
 
 ```bash
-git clone
+git clone https://github.com/MohamedShehata15/Movie-app.git
 cd movie-app
 npm install
 ```
